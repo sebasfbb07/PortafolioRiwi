@@ -73,11 +73,15 @@ p {
 }
 
 div {
+    padding-top: 20px;
     background-color: rgb(121, 162, 176);
     font-optical-sizing: auto;
     font-weight: 100;
     font-variation-settings: "GRAD" 0;
     padding-bottom: 20px;
+    border-radius: 3mm 3mm 3mm 3mm;
+    border-top-left-radius: 3mm;
+    border-top-right-radius: 3mm;
 
 }
 
@@ -148,6 +152,9 @@ div {
 
 .tarjeta-mascota {
     padding: center;
+    
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .tarjeta-mascota img {
