@@ -9,46 +9,59 @@
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
 
-    <!-- Enlace CSS-->
-    <link rel="stylesheet" href="./src/css/font_google.css">
+    <!-- Enlace CSS -->
+    <link rel="stylesheet" href="./src/css/style2.css">
     <link rel="stylesheet" href="./src/css/menu.css">
 </head>
 
 <body>
-    
+
     <header>
         <h1>Sebastian Bernal</h1>
-    
+        <nav>
+            <ul>
+                <li><a href="./src/views/projects.html">Projects</a></li>
+                <li><a href="./pets.html">Pets</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="./src/views/contacts.html">Contacts</a></li>
-            <li><a href="./src/views/projects.html">Projects</a></li>
-            <li><a href="./pets.html">Pets</a></li>
-        </ul>
-    </nav>
-    
-    <h2>About me</h2>
-    <div>
 
-        <p>Web Developer in Training | Riwi Academic
-            As an active student at Riwi, I specialize in software development with a practical approach. My current
-            training focuses on:
-            Web Architecture: Semantic structuring with HTML5.
-            Design and Style: Advanced layout with CSS3 (Flexbox and Grid).
-            Agile Methodologies: Collaborative work and solving technical challenges.
+    <main>
+        <h2>About me</h2>
 
-            My goal is to apply everything I've learned to projects that make a difference.</p>
-        <img src="./public/img/develop.jpeg" alt="developer" class="profile-img">
-    </div>
+        <div>
+            <p>
+                Web Developer in Training | Riwi Academic
+                As an active student at Riwi, I specialize in software development with a practical approach. 
+                My current training focuses on:
+                Web Architecture: Semantic structuring with HTML5.
+                Design and Style: Advanced layout with CSS3 (Flexbox and Grid).
+                Agile Methodologies: Collaborative work and solving technical challenges.
+
+                My goal is to apply everything I've learned to projects that make a difference.
+            </p>
+
+            <img src="./public/img/develop.jpeg" alt="developer">
+        </div>
+
+        <div class="contenedor-formulario">
+            <form action="#">
+                <h2>To Contact me</h2>
+
+                <input type="text" placeholder="Your name..." required>
+                <input type="email" placeholder="Your email..." required>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
 
     <footer>
-        <p>pie</p>
+        <p>© 2026 Sebastian Bernal</p>
     </footer>
+
 </body>
 
 </html>

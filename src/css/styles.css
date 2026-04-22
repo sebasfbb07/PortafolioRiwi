@@ -1,10 +1,147 @@
-input, button {
-    padding: 10;
-    border-radius: 5000;
-    border: 6dvh 
+/* BASE (igual que index) */
+body {
+    font-family: 'Google Sans', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    margin: 0;
 }
 
-button { 
-    background-color: rgb(157, 157, 200);
-
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px 10px;
 }
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* NAV */
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+
+/* GRID */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* CARDS */
+.project-card {
+    background: #020617;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* HOVER PRO */
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* TEXTOS */
+.project-card h2 {
+    margin-bottom: 10px;
+    color: #f1f5f9;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+/* LINK */
+.project-card a {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #0ea5e9;
+}
+
+
+/* BASE (móvil primero) */
+.pets-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* tablets pequeñas */
+@media (min-width: 480px) {
+    .pets-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* pantallas grandes */
+@media (min-width: 900px) {
+    .pets-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* TARJETAS */
+.pet-card {
+    background: #020617;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.pet-card:hover {
+    transform: scale(1.03);
+}
+
+/* IMAGEN */
+.pet-card img {
+    width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* MOSAICO DIFERENTE */
+.pet-big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.pet-wide {
+    grid-column: span 2;
+}
+
