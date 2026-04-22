@@ -1,0 +1,49 @@
+#menu-toggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+
+    /* mostrar icono */
+    .menu-icon {
+        display: block;
+        
+        right: 20px;
+        top: 20px;
+    }
+
+    /* ocultar menú por defecto */
+    .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #020617;
+
+        max-height: 0;
+        overflow: hidden;
+
+        transition: 0.3s;
+    }
+
+    /* menú en columna */
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /*cuando el checkbox está activo */
+    #menu-toggle:checked ~ .menu {
+        max-height: 200px;
+    }
+}

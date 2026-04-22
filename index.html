@@ -13,19 +13,30 @@
 
     <!-- Enlace CSS -->
     <link rel="stylesheet" href="./src/css/style2.css">
-    <link rel="stylesheet" href="./src/css/menu.css">
+    <link rel="stylesheet" href="./src/css/styles3.css">
+
 </head>
 
 <body>
 
     <header>
         <h1>Sebastian Bernal</h1>
-        <nav>
-            <ul>
-                <li><a href="./src/views/projects.html">Projects</a></li>
-                <li><a href="./pets.html">Pets</a></li>
-            </ul>
-        </nav>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>  
+    </label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./src/views/projects.html">Projects</a></li>
+            <li><a href="./pets.html">Pets</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main>
