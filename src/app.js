@@ -4,5 +4,5 @@ const formulario = document.getElementById('formulario');
 
 
 formulario.addEventListener('submit', function() {
-    alert('Your message has been sent!');
+    alert('Your information has been sent!');
 });
