@@ -77,7 +77,7 @@ main p {
 
 /* IMAGEN */
 main img {
-    width: 150px;
+    width: 30%; /* No colocare 100% para que no ocupe toda la pantalla */
     display: block;
     margin: 0 auto;
     border-radius: 10px;
